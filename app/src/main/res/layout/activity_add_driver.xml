@@ -54,14 +54,13 @@
             android:id="@+id/ed_driver_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:hint="Address"
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="12dp"
             android:autofillHints=""
 
             android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/btn_save_driver"

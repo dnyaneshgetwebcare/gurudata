@@ -12,15 +12,21 @@
         android:theme="@style/Theme.Gurudata"
         tools:targetApi="31">
         <activity
-            android:name=".AddDriver"
+            android:name=".ui.MainScreenActivity"
             android:exported="false" />
         <activity
+            android:name=".LauncherAcitivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AddDriver"
+            android:exported="false" />
+        <!--<activity
             android:name=".DriverManagement"
             android:exported="false"
             android:label="@string/title_activity_driver_management"
-            android:theme="@style/Theme.Gurudata.NoActionBar" />
+            android:theme="@style/Theme.Gurudata.NoActionBar" />-->
         <activity
-            android:name=".MainActivity"
+            android:name=".DriverManagement"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Gurudata.NoActionBar">
