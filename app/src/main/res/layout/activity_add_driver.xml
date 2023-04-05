@@ -25,7 +25,22 @@
             android:textAlignment="center"
             android:textSize="48dp"
             android:textStyle="bold"/>
+    <!--    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Enter something">
 
+            &lt;!&ndash;this is the actual edit text which takes the input&ndash;&gt;
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>-->
         <EditText
             android:id="@+id/ed_driver_name"
             android:layout_width="match_parent"
@@ -33,6 +48,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="12dp"
             android:maxLines="1"
+            android:drawableRight="@android:drawable/ic_menu_add"
             android:hint="Driver name"
             android:inputType="textPersonName"
 
@@ -54,13 +70,16 @@
             android:id="@+id/ed_driver_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Address"
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="12dp"
             android:autofillHints=""
-
+            android:hint="Address"
+            android:lines="3"
+            android:maxLines="5"
+            android:minLines="3"
             android:importantForAutofill="no"
-            android:inputType="textPersonName" />
+            android:inputType="textMultiLine"
+           />
 
         <Button
             android:id="@+id/btn_save_driver"
